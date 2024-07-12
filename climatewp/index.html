@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Prediction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+
+    }
+    #h1{
+      font-size: 29px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+    }
+    header {
+      background-color: #D0D4CA;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2px;
+      box-sizing: border-box;
+      border-bottom: 2px solid #333;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    
+    .title-section {
+      flex: 1;
+      text-align: center;
+    }
+
+    .logo{
+      height: 130px;
+      width: 130px;
+      margin: auto;
+    }
+    .wlogo{
+      height: 150px;
+      width: 150px;
+      margin: auto;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #575757;
+      display: flex;
+      flex-wrap: wrap;
+    }
+ 
+    li {
+      margin: 3px;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    li a:hover {
+      background-color: #333;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+        
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #575757;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #333;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 500px;
+    }
+    .forecast-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+     }
+     .forecast-card {
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     }
+     .forecast-card h3 {
+            margin-top: 0;
+     }
+     div a{
+      text-decoration: none;
+     }
+    .float {
+      position: fixed;
+      width: 100px;
+      height: 40px;
+      bottom: 20px;
+      right: 40px;
+      color: #FFF;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .my-float {
+      margin-top: 22px;
+    }
+
+    button {
+      border-radius: 5px;
+      background-color: rgb(253, 209, 99);
+      border: none;
+      width: 120px;
+      height: 40px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: goldenrod;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1px;
+      height: 20vh;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    #footer {
+      text-align: center;
+    }
+  
+
+    @media (max-width: 768px) {
+      /* .title-section h1 {
+        font-size: 20px;
+      } */
+      .logo, .wlogo {
+        height: 100px;
+        width: 100px;
+      }
+
+      ul {
+        flex-direction: column;
+      }
+
+      li {
+        width: 100%;
+      }
+
+      li a {
+        padding: 10px;
+      }
+
+      .dropdown-content {
+        position: static;
+      }
+
+      .home-link {
+        display:-webkit-inline-flex;
+      }
+      .dropbtn{
+        display:-webkit-inline-flex;
+      }
+     
+    }
+
+    @media (max-width: 300px) {
+      .logo, .wlogo {
+        height: 50px;
+        width: 50px;
+      }
+
+      .title-section h1 {
+        font-size: 16px;
+      }
+
+      .dept h5 {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <img src="nit-removebg-preview.png" alt="Institute Logo" class="logo">
+    </div>
+    <div class="title-section">
+      <h5>Remote Sensing Division<br>Department of Civil Engineering</h5>
+      <h1 id="h1">Climate Prediction</h1>
+    </div>
+    <div class="climate">
+      <img src="clim1-removebg-preview.png" alt="Climate Logo" class="wlogo">
+    </div>
+  </header>
+  <ul>
+    <li> <a class="home-link" href="#"> <i class="fa fa-fw fa-home"></i>Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn"> &#9776;</a>
+      <div class="dropdown-content">
+        <a href="help.html">Help</a>
+        <a href="#footer">About</a>
+      </div>
+    </li>
+  </ul>
+  <main>
+    <section id="forecasts">
+      <h2>Forecasts</h2>
+      <div class="forecast-section">
+          <div class="forecast-card">
+              <h3>Rainfall Forecast</h3>
+              <p>Find out the expected Rainfall forecasts for upcoming month.</p>
+              <a href="#">Learn More</a>
+          </div>
+          <div class="forecast-card">
+              <h3>Temperature Forecast</h3>
+              <p>Find out the expected Temperature forecasts for upcoming month.</p>
+              <a href="#">Learn More</a>
+          </div>
+          <div class="forecast-card">
+              <h3>Monthly Forecast</h3>
+              <p>Find out the expected Rainfall and Temperature trends for the upcoming month.</p>
+              <a href="#">Learn More</a>
+          </div>
+      </div>
+  </section>
+
+  </main>
+  <footer>
+    <div id="footer">
+      <div class="contact">
+        <h3><i class="fa fa-phone"></i> Contact Us</h3>
+      <p>Dr.Venkat Reddy Kesara,Professor,NIT-W</p>
+    </div>
+    <div>
+      <h3><i class="fa fa-instagram"></i> nitwarangaloffical</h3>
+    </div>
+    </div>
+  </footer>
+  <a href="map.html" class="float">
+    <button><strong>Goto Map</strong></button></i>
+  </a>
+</body>
+</html>

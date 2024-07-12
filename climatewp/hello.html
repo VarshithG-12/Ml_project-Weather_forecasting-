@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Prediction</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background:  rgba(127, 255, 212, 0.402);
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      box-sizing: border-box;
+      border-bottom: 2px solid #333;
+      flex-wrap: wrap;
+    }
+
+    .title-section {
+      flex: 1 1 ;
+      text-align: center;
+    }
+
+    .logo, .wlogo {
+      height: 140px;
+      width: 150px;
+      margin: auto;
+    }
+
+    .title-section {
+      flex: 2;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      display: flex;
+      /* justify-content: center; */
+      flex-wrap: wrap;
+    }
+
+    li {
+      margin: 5px;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    li a:hover {
+      background-color: #575757;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #575757;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      /* background-color:; */
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 500px;
+    }
+    .float{
+	position:fixed;
+	width:100px;
+	height:40px;
+	bottom:20px;
+	right:40px;
+	color:#FFF;
+	border-radius: 8px;
+	text-align:center;
+    text-decoration: none;
+
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+    button {
+      border-radius: 5px;
+      background-color:goldenrod;
+      border: none;
+      width: 120px;
+      height: 40px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #7fffd4;
+    }
+
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      height: 15vh;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    #footer {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .title-section h1 {
+        font-size: 24px;
+      }
+
+      ul {
+        flex-direction: column;
+      }
+
+      li {
+        width: 100%;
+      }
+
+      li a {
+        padding: 10px;
+      }
+
+      .dropdown-content {
+        position: static;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo, .wlogo {
+        height: 80px;
+        width: 80px;
+      }
+
+      .title-section h1 {
+        font-size: 18px;
+      }
+
+      .dept h5 {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="logo">
+      <img src="nit-removebg-preview.png" alt="Institute Logo" class="logo">
+    </div>
+    <div class="title-section">
+      <h5>Remote Sensing Division<br>Department of Civil Engineering</h5>
+      <h1 style="font-size: 35px;">Climate Prediction</h1>
+    </div>
+    <div class="climate">
+      <img src="clim1-removebg-preview.png" alt="Climate Logo" class="wlogo">
+    </div>
+  </header>
+  <ul>
+    <!-- <li><a href="">Home</a></li> -->
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn"> &#9776;</a>
+      <div class="dropdown-content">
+        <a href="help.html">Help</a>
+        <a href="#footer">About</a>
+      </div>
+    </li>
+    <li><a href="">Home</a></li>
+  </ul>
+  <main>
+    <section class="guidelines">
+      <!-- Content goes here -->
+    </section>
+  </main>
+  <footer>
+    <div id="footer">
+      <h3>Thanks for Visiting Us!</h3>
+    </div>
+  </footer>
+  <a href="#" class="float">
+    <i class="fa fa-plus my-float"><button><strong>Goto Map</strong></button></i>
+    </a>
+</body>
+</html>

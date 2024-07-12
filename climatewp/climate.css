@@ -1,0 +1,100 @@
+
+  
+   header {
+    background: rgba(127, 255, 212, 0.402);
+    color: black;
+    height: 150px;
+  } 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    height: 150px;
+  }
+  #logo{
+    width: 210px;
+  }
+  .logo{
+    height:140px;
+    width:140px;
+  }
+  .climate{
+    align-items: center;
+  }
+  .wlogo{
+    padding-left: 160px;
+    height: 150px;
+  }
+  
+  .dept{
+   
+    text-align: center;
+     width: 110px;
+  }
+  .title-section{
+   text-align: center;
+    font-size: 35px;
+    width: 850px;
+  }
+ main {
+    background-color:#ffffffff;
+    text-align: center;
+    height: 700px;
+  } 
+  button{
+    border-radius: 8px;
+    background-color: aquamarine ;
+  }
+
+  
+  
+   footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    height: 15vh;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  #footer{
+   text-align: center;
+  }
+   
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    .logo-department, .title-section {
+      flex-direction: column;
+    }
+  
+    .logo, .climate-logo {
+      margin: 0 0 1em 0;
+    }
+  }
+  
